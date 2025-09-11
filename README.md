@@ -18,7 +18,7 @@
 ## Thuật toán giải sudoku 
 <p style="font-size:18px"><b>Sử dụng thuật toán Backtracking (quay lui)</b></p>
 
- - 
+ - Đã thêm thuật toán
 
 ---
 ## Nguồn tham khảo
