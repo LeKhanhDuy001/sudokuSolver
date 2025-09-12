@@ -25,17 +25,19 @@
 </div>
 
 
-<p style="font-size:18px"><b>Sử dụng thuật toán Backtracking (quay lui)</b></p>
+<h3>Sử dụng thuật toán Backtracking (quay lui)</h3>
 
 - Thuật toán Backtracking được thiết kế dựa trên đệ quy (recursion) được đề ra đầu tiên bởi nhà toán học người Mỹ Derrick Henry "Dick" Lehmer vào những năm 1950. 
 - Bản chất của Backtracking là thuật toán tìm kiếm theo chiều sâu (Depth-first search)
 <h3>Ý tưởng</h3>
 - Dùng để giải bài toán liệt kê các cấu hình. Mỗi cấu hình được xây dựng bằng từng phần tử. Mỗi phần tử lại được chọn bằng cách thử tất cả các khả năng.
 <h3>Các bước trong liệt kê cấu hình dạng X[1..n]</h3>
-- Xét tất cả các giá trị X[1] có thể nhận, thử X[1] nhận các giá trị đó. Với mỗi giá trị của X[1] ta sẽ:
-- Xét tất cả các giá trị X[2] có thể nhận, thử X[2] cho các giá trị đó. Với mỗi giá trị X[2] lại xét các giá trị của X[3] và tiếp tục như vậy cho đến:
-- Xét tất cả các giá trị X[n] có thể nhận, thử cho X[n] nhận lần lượt giá trị đó.
-- Thông báo cấu hình tìm được.
+<ul>
+    <li>Xét tất cả các giá trị X[1] có thể nhận, thử X[1] nhận các giá trị đó. Với mỗi giá trị của X[1] ta sẽ:</li>
+    <li>Xét tất cả các giá trị X[2] có thể nhận, thử X[2] cho các giá trị đó. Với mỗi giá trị X[2] lại xét các giá trị của X[3] và tiếp tục như vậy cho đến:</li>
+    <li>Xét tất cả các giá trị X[n] có thể nhận, thử cho X[n] nhận lần lượt giá trị đó.</li>
+    <li>Thông báo cấu hình tìm được.</li>
+</ul>
 <p align="center">
   <img src="image/minhHoaBacktracking.png" alt="Sudoku Example" width="300">
 </p>
