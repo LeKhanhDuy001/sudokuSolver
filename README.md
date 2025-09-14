@@ -30,7 +30,9 @@
 - Thuật toán Backtracking được thiết kế dựa trên đệ quy (recursion) được đề ra đầu tiên bởi nhà toán học người Mỹ Derrick Henry "Dick" Lehmer vào những năm 1950. 
 - Bản chất của Backtracking là thuật toán tìm kiếm theo chiều sâu (Depth-first search)
 <h3>Ý tưởng</h3>
-- Dùng để giải bài toán liệt kê các cấu hình. Mỗi cấu hình được xây dựng bằng từng phần tử. Mỗi phần tử lại được chọn bằng cách thử tất cả các khả năng.
+<ul>
+    <li>Dùng để giải bài toán liệt kê các cấu hình. Mỗi cấu hình được xây dựng bằng từng phần tử. Mỗi phần tử lại được chọn bằng cách thử tất cả các khả năng.</li>
+</ul>
 <h3>Các bước trong liệt kê cấu hình dạng X[1..n]</h3>
 <ul>
     <li>Xét tất cả các giá trị X[1] có thể nhận, thử X[1] nhận các giá trị đó. Với mỗi giá trị của X[1] ta sẽ:</li>
