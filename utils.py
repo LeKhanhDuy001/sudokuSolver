@@ -1,9 +1,7 @@
 from typing import List
 from sudoku_env import Board
 
-
 SEPARATOR = "------+-------+------"
-
 
 def board_to_str(board: Board) -> str:
     lines: List[str] = []
