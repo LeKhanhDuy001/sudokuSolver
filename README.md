@@ -48,7 +48,10 @@
   <img src="image/maGiaThuatToan.png" alt="Sudoku Example" width="300">
 </p>
 <hr>
-
+<h2>Thành viên</h2>
+Lê Khánh Duy <br>
+Nguyễn Vinh Lợi
+<hr>
 <h2>Nguồn tham khảo</h2>
 https://en.wikipedia.org/wiki/Sudoku_solving_algorithms <br>
 https://www.thegioididong.com/game-app/huong-dan-cach-choi-game-o-so-sudoku-chien-thuat-luat-choi-co-1320525 <br>
