@@ -18,7 +18,7 @@ class SudokuEnvironment:
     def is_empty(self, r: int, c: int) -> bool:
         return self.board[r][c] == 0
 
-    def possible_values(self, r: int, c: int) -> Set[int]:
+    def possible_values(self, r: int, c: int) -> Set[int]: #loại bỏ các số đã xuất hiện trong cùng một hàng, cột, khối
         if not self.is_empty(r, c):
             return set()
 

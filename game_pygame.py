@@ -6,7 +6,7 @@ from typing import List, Tuple
 
 from sudoku_env import SudokuEnvironment
 from solver import SudokuSolver
-from puzzles import sample, easy, hard, imposs
+from puzzles import sample, easy, hard
 from utils import board_to_str
 
 # -------------------- Config & UI constants --------------------
@@ -14,7 +14,6 @@ PRESETS = {
     'sample': sample,
     'easy': easy,
     'hard': hard,
-    'imposs': imposs,
 }
 
 WIDTH, HEIGHT = 900, 760
