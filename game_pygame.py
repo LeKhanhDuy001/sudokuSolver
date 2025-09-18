@@ -69,7 +69,7 @@ def run_game():
     elapsed_time = 0.0
 
     # Buttons
-    btn_load = Button((BOARD_SIZE + 40, 40, 120, 34), 'Load', small_font)
+    #btn_load = Button((BOARD_SIZE + 40, 40, 120, 34), 'Load', small_font)
     btn_reset = Button((BOARD_SIZE + 40, 86, 120, 34), 'Reset', small_font)
     btn_solve = Button((BOARD_SIZE + 40, 132, 120, 34), 'Solve', small_font)
     btn_pause = Button((BOARD_SIZE + 40, 178, 120, 34), 'Pause', small_font)
@@ -204,7 +204,7 @@ def run_game():
         draw_board(screen, working_board, selected_cell=selected)
 
         # draw buttons
-        for b in [btn_load, btn_reset, btn_solve, btn_pause, btn_step, btn_speed_up, btn_speed_down, btn_preset]:
+        for b in [btn_reset, btn_solve, btn_pause, btn_step, btn_speed_up, btn_speed_down, btn_preset]:
             b.draw(screen)
 
         # message + time

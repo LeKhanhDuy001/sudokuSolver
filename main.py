@@ -17,17 +17,19 @@ sample_board: Board = [
         [7,0,3,0,1,8,0,0,0]
     ]
 
-
-'''
-env = SudokuEnvironment(copy.deepcopy(sample_board))
+'''env = SudokuEnvironment(copy.deepcopy(sample_board))
 solver = SudokuSolver(env)
 solved = solver.solve_generator()
-if hasattr(solved, '__iter__'):  # kiểm tra nếu trả về generator
-    for _ in solved:
-        pass
-print("Sudoku board after solving:")
-print(board_to_str(env.board))
+step = 0
+try:
+    while True:
+        action, r, c, val, board_snap = next(solved)
+        step += 1
+        print(f"Step {step}: {action} {val} at ({r},{c})")
+        print(board_to_str(board_snap))
+        print("-"*30)
+except StopIteration:
+    print("finished solving.")"
 '''
-
 if __name__ == "__main__":
     run_game()
