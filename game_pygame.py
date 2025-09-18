@@ -16,7 +16,7 @@ PRESETS = {
     'hard': hard,
 }
 
-WIDTH, HEIGHT = 900, 760
+WIDTH, HEIGHT = 950, 760
 GRID_ORIGIN = (20, 20)
 CELL_SIZE = 70
 BOARD_SIZE = CELL_SIZE * 9
@@ -169,10 +169,10 @@ def run_game():
                             elapsed_time = time.perf_counter() - start_time if start_time else elapsed_time
                             message = 'Done.'
                     elif btn_speed_up.clicked((mx,my)):
-                        step_delay = max(0.005, step_delay - 0.01)
+                        step_delay = max(0.005, step_delay - 0.05)
                         message = f'Speed: {step_delay:.3f}s/step'
                     elif btn_speed_down.clicked((mx,my)):
-                        step_delay = min(1.0, step_delay + 0.01)
+                        step_delay = min(1.0, step_delay + 0.05)
                         message = f'Speed: {step_delay:.3f}s/step'
 
             elif event.type == pygame.KEYDOWN:
